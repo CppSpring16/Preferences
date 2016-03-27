@@ -53,13 +53,7 @@ int getMaxCredits(){
 	return maxCredits;
 }
 
-bool getAnyDaysOff(bool anyDaysOff){
-	if(true){
-		cout << "YES" << endl;
-	}else{
-		cout << "NO" << endl;
-	}
-
+static bool getAnyDaysOff(bool anyDaysOff){
 	return anyDaysOff;
 
 }

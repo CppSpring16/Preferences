@@ -52,13 +52,15 @@ int main() {
 	cin >> numHandler;
 	pref->setMaxPeriodsDay(numHandler);
 
-	cout << "Student Preferences" << endl;
+	cout << endl;
+
+	cout << "------- Student Preferences -------" << endl;
 	cout << "Minimum Credits: " << pref->getMinCredits() << endl;
 	cout << "Maximum Credits: " << pref->getMaxCredits() << endl;
-	cout << "Requested Days off: " ;
-	if(pref->getAnyDaysOff){
-		cout << cout << "YES" << endl;
-	}else{
+	cout << "Requested Days off: ";
+	if(pref->getAnyDaysOff(boolHandler) == true){
+		cout << "YES" << endl;
+	}else if(pref->getAnyDaysOff(boolHandler) == false){
 		cout << "NO" << endl;
 	}
 	cout << "Maximum Periods in a Row: " << pref->getMaxPeriodsRow() << endl;
